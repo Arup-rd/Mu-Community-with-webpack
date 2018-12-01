@@ -1,0 +1,69 @@
+body,html {
+  height: 100%;
+  width: 100%;
+}
+.App {
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+#root {
+  height: 100%;
+}
+.landing {
+  position: relative;
+  background-size: cover;
+  background-image: url('./img/showcase.jpg');
+  height: 100vh;
+  margin-bottom: 0px;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+.container {
+  width: 100%;
+}
+
+.com-body {
+  height: auto;
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+}
+.mb-4, .my-4 {
+  margin-bottom: 0!important;
+}
+
+.mt-5, .my-5 {
+  margin-top: 0!important;
+}
+
+.form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
