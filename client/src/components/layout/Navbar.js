@@ -62,9 +62,9 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4 nav">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4 nav" id='Nav'>
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link id='website-name' className="navbar-brand" to="/">
             Mu Community
           </Link>
           <button

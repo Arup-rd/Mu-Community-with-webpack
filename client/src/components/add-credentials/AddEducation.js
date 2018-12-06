@@ -67,31 +67,30 @@ class AddEducation extends Component {
         <div className="container form">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <Link to="/dashboard" className="btn btn-light">
+              <Link to="/dashboard" className="btn btn-light bttn">
                 Go Back
               </Link>
-              <h1 className="display-4 text-center">Add Education</h1>
+              <h1 className="display-4 text-center ttx">ADD Education </h1>
               <p className="lead text-center">
                 Add any school, bootcamp, etc that you have attended
               </p>
-              <small className="d-block pb-3">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* School"
+                  placeholder="School"
                   name="school"
                   value={this.state.school}
                   onChange={this.onChange}
                   error={errors.school}
                 />
                 <TextFieldGroup
-                  placeholder="* Degree or Certification"
+                  placeholder="Degree or Certification"
                   name="degree"
                   value={this.state.degree}
                   onChange={this.onChange}
                   error={errors.degree}
                 />
                 <TextFieldGroup
-                  placeholder="* Field of Study"
+                  placeholder="Field of Study"
                   name="fieldofstudy"
                   value={this.state.fieldofstudy}
                   onChange={this.onChange}

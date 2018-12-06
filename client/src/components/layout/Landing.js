@@ -20,13 +20,13 @@ class Landing extends Component {
                 <h1 className="display-3 mb-4">MU COMMUNITY</h1>
                 <p className="lead">
                   {' '}
-                  Create Your Profile to Join in MU Family
+                  Join Us!
                 </p>
                 <hr />
-                <Link to="/register" className="btn btn-lg btn-info mr-2">
+                <Link to="/register" className="btn btn-lg btn-info mr-2 bttns">
                   Sign Up
                 </Link>
-                <Link to="/login" className="btn btn-lg btn-light">
+                <Link to="/login" className="btn btn-lg btn-light bttnl">
                   Login
                 </Link>
               </div>

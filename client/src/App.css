@@ -1,6 +1,15 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+/* navbar */
+
+
 body,html {
   height: 100%;
   width: 100%;
+  color: steelblue
 }
 .App {
   height: 100%;
@@ -66,4 +75,59 @@ img {
 .form {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+#website-name {
+ color: #f7b809;
+ font-size: 30px;
+ font-weight: 500;
+ margin-right: 20px
+}
+
+#website-name:hover {
+  color: burlywood
+}
+
+.bttns {
+  color: white ;
+  background: #ea5d00;
+  border-width: 3px solid;
+  padding: 12px 26px 12px 26px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+  border-color: #ea5d00;
+  text-transform: uppercase;
+}
+
+.bttns:hover {
+    color: #ea5d00;
+    border-width: 4px solid;
+    background: transparent;
+    border-color: #ea5d00;
+}
+
+.bttnl {
+  color: white ;
+  background: green;
+  border-width: 3px solid;
+  padding: 12px 26px 12px 26px;
+  font-size: 16px;
+  border-color: green;
+  font-weight: 400;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.bttnl:hover {
+    color: green;
+    border-width: 4px solid;
+    background: transparent;
+    border-color: green;
+}
+
+
+.ttx {
+  color: steelblue;
+  font-size: 50px;
 }

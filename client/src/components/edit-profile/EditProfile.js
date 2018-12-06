@@ -82,7 +82,6 @@ class CreateProfile extends Component {
         location: profile.location,
         status: profile.status,
         skills: skillsCSV,
-        githubusername: profile.githubusername,
         bio: profile.bio,
         twitter: profile.twitter,
         facebook: profile.facebook,
@@ -103,7 +102,6 @@ class CreateProfile extends Component {
       location: this.state.location,
       status: this.state.status,
       skills: this.state.skills,
-      githubusername: this.state.githubusername,
       bio: this.state.bio,
       twitter: this.state.twitter,
       facebook: this.state.facebook,
@@ -177,13 +175,13 @@ class CreateProfile extends Component {
 
     // Select options for status
     const options = [
-      { label: '* Select Professional Status', value: 0 },
-      { label: 'Developer', value: 'Developer' },
-      { label: 'Junior Developer', value: 'Junior Developer' },
-      { label: 'Senior Developer', value: 'Senior Developer' },
-      { label: 'Manager', value: 'Manager' },
-      { label: 'Student or Learning', value: 'Student or Learning' },
-      { label: 'Instructor or Teacher', value: 'Instructor or Teacher' },
+      { label: 'Select Your Status', value: 0 },
+      { label: 'Student', value: 'Student' },
+      { label: 'Teaching Assistant', value: 'Teaching Assistant' },
+      { label: 'Teacher', value: 'Teacher' },
+      { label: 'Trustee Board Member', value: 'Trustee Board Member' },
+      { label: 'Accounts Member', value: 'Accounts Member' },
+      { label: 'Stuff', value: 'Stuff' },
       { label: 'Intern', value: 'Intern' },
       { label: 'Other', value: 'Other' }
     ];
@@ -193,14 +191,14 @@ class CreateProfile extends Component {
         <div className="container form">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <Link to="/dashboard" className="btn btn-light">
+              <Link to="/dashboard" className="btn btn-light bttn">
                 Go Back
               </Link>
-              <h1 className="display-4 text-center">Edit Profile</h1>
-              <small className="d-block pb-3">* = required fields</small>
+              <h1 className="display-4 text-center ttx">Edit Profile</h1>
+             
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* Profile Handle"
+                  placeholder="Profile Handle"
                   name="handle"
                   value={this.state.handle}
                   onChange={this.onChange}
@@ -241,7 +239,7 @@ class CreateProfile extends Component {
                   info="City or city & state suggested (eg. Boston, MA)"
                 />
                 <TextFieldGroup
-                  placeholder="* Skills"
+                  placeholder="Skills"
                   name="skills"
                   value={this.state.skills}
                   onChange={this.onChange}
@@ -249,14 +247,7 @@ class CreateProfile extends Component {
                   info="Please use comma separated values (eg.
                     HTML,CSS,JavaScript,PHP"
                 />
-                <TextFieldGroup
-                  placeholder="Github Username"
-                  name="githubusername"
-                  value={this.state.githubusername}
-                  onChange={this.onChange}
-                  error={errors.githubusername}
-                  info="If you want your latest repos and a Github link, include your username"
-                />
+      
                 <TextAreaFieldGroup
                   placeholder="Short Bio"
                   name="bio"

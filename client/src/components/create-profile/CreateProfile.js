@@ -19,7 +19,6 @@ class CreateProfile extends Component {
       location: '',
       status: '',
       skills: '',
-      githubusername: '',
       bio: '',
       twitter: '',
       facebook: '',
@@ -130,7 +129,7 @@ class CreateProfile extends Component {
         <div className="container form">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Create Your Profile</h1>
+              <h1 className="display-4 text-center ttx">Create Your Profile</h1>
               <p className="lead text-center">
                 Let's get some information to make your profile stand out
               </p>
@@ -189,14 +188,6 @@ class CreateProfile extends Component {
                   info="Add your email"
                 />
 
-                <TextFieldGroup
-                  placeholder="Github Username"
-                  name="githubusername"
-                  value={this.state.githubusername}
-                  onChange={this.onChange}
-                  error={errors.githubusername}
-                  info="If you want your latest repos and a Github link, include your username"
-                />
                 <TextAreaFieldGroup
                   placeholder="Short Bio"
                   name="bio"
@@ -214,7 +205,7 @@ class CreateProfile extends Component {
                         displaySocialInputs: !prevState.displaySocialInputs
                       }));
                     }}
-                    className="btn btn-light"
+                    className="btn btn-light bttn"
                   >
                     Add Social Network Links
                   </button>
